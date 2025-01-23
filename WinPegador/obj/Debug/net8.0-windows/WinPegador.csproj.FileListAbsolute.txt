@@ -12,3 +12,4 @@ c:\Users\franc\Desktop\WinPegador\WinPegador\obj\Debug\net8.0-windows\refint\Win
 c:\Users\franc\Desktop\WinPegador\WinPegador\obj\Debug\net8.0-windows\WinPegador.pdb
 c:\Users\franc\Desktop\WinPegador\WinPegador\obj\Debug\net8.0-windows\WinPegador.genruntimeconfig.cache
 c:\Users\franc\Desktop\WinPegador\WinPegador\obj\Debug\net8.0-windows\ref\WinPegador.dll
+c:\Users\franc\Desktop\WinPegador\WinPegador\obj\Debug\net8.0-windows\WinPegador.sourcelink.json
