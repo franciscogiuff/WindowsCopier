@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WinPegador")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+858874856b4ace84909b13a1f60eff7668d6b239")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf383d97ec4e65017024ad4e48d5392388a5b334")]
 [assembly: System.Reflection.AssemblyProductAttribute("WinPegador")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WinPegador")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

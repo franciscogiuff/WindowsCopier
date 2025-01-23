@@ -7,19 +7,17 @@ using System.Windows.Interop;
 using System.Diagnostics;
 
 
-public class MiForm : Form
-{
-        private const int WH_MOUSE_LL = 14;
-    private const int WM_LBUTTONDOWN = 0x0201;
-        private static LowLevelMouseProc _proc = HookCallback;
+public class MiForm : Form {
+    private const int WH_MOUSE_LL = 14;
+    private const int WM_LBUTTONDOWN = 0x0207;
+    private static LowLevelMouseProc _proc = HookCallback;
     private static IntPtr _hookID = IntPtr.Zero;
-         private delegate IntPtr LowLevelMouseProc(int nCode, IntPtr wParam, IntPtr lParam);
+    private delegate IntPtr LowLevelMouseProc(int nCode, IntPtr wParam, IntPtr lParam);
 
-    private static IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam)
-    {
-        if (nCode >= 0 && (wParam == (IntPtr)WM_LBUTTONDOWN))
-        {
-            Console.WriteLine("Detected click");
+    private static IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam) {
+        if (nCode >= 0 && (wParam == (IntPtr)WM_LBUTTONDOWN)) {
+            string clipBoard = Clipboard.GetText();
+            Console.WriteLine($"Detected click + {clipBoard}");
         }
         return CallNextHookEx(_hookID, nCode, wParam, lParam);
     }
@@ -51,19 +49,16 @@ public class MiForm : Form
         MessageBox.Show($"Clic detectado en posición: {e.Location} + sender {sender} + args {e}");
     }
     
-
-    public static void Main()
-    {
+    [STAThread]
+    public static void Main() {
         _hookID = SetHook(_proc);
         Application.Run( new MiForm());
         UnhookWindowsHookEx(_hookID);
     }
 
-    private static IntPtr SetHook(LowLevelMouseProc proc)
-    {
+    private static IntPtr SetHook(LowLevelMouseProc proc) {
         using (Process curProcess = Process.GetCurrentProcess())
-        using (ProcessModule curModule = curProcess.MainModule)
-        {
+        using (ProcessModule curModule = curProcess.MainModule) {
             return SetWindowsHookEx(WH_MOUSE_LL, proc,
                 GetModuleHandle(curModule.ModuleName), 0);
         }
