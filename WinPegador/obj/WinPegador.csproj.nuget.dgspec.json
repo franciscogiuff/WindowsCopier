@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\franc\\Desktop\\WinPegador\\WinPegador\\WinPegador.csproj": {}
+    "c:\\Users\\franc\\Desktop\\WinPegador\\WinPegador\\WinPegador.csproj": {}
   },
   "projects": {
-    "C:\\Users\\franc\\Desktop\\WinPegador\\WinPegador\\WinPegador.csproj": {
+    "c:\\Users\\franc\\Desktop\\WinPegador\\WinPegador\\WinPegador.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\franc\\Desktop\\WinPegador\\WinPegador\\WinPegador.csproj",
+        "projectUniqueName": "c:\\Users\\franc\\Desktop\\WinPegador\\WinPegador\\WinPegador.csproj",
         "projectName": "WinPegador",
-        "projectPath": "C:\\Users\\franc\\Desktop\\WinPegador\\WinPegador\\WinPegador.csproj",
+        "projectPath": "c:\\Users\\franc\\Desktop\\WinPegador\\WinPegador\\WinPegador.csproj",
         "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\franc\\Desktop\\WinPegador\\WinPegador\\obj\\",
+        "outputPath": "c:\\Users\\franc\\Desktop\\WinPegador\\WinPegador\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
